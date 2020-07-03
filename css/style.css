@@ -22,6 +22,34 @@
 	border-radius: 100%;
 }
 
+.my-nav li .effect-cart{
+	position: absolute;
+	top: 127%;
+	right: 10%;
+	width: 100px;
+	height: 100px;
+	background-color: #333;
+	z-index: 3;
+	opacity: 0;
+}
+
+.my-nav li .effect-cart::before{
+	content: "";
+	border: 20px solid;
+	border-color: transparent transparent #333 transparent;
+	position: absolute;
+	top: -38px;
+    left: 60px;
+    
+
+}
+
+.head-cart:hover .effect-cart{
+	opacity: 1;
+	transition: 0.6s all;
+}
+
+
 .my-nav ul li a{
 	color: #333;
 	text-transform: uppercase;
